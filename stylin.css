@@ -14,9 +14,76 @@
 	font-family: Century;
 	font-size: 30px;
 	text-align: center;
-
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
 }
 
-.header {
+.game:hover {
+	background-color: #BEBEBE;
+}
 
+#game1 {
+	background-color: red;
+	margin: 50px auto;
+	height: 500px;
+	width: 600px;
+	border-radius: 30px;
+}
+
+#game2 {
+	background-color: blue;
+	margin: 50px auto;
+	height: 500px;
+	width: 600px;
+	border-radius: 30px;
+}
+
+#game3 {
+	background-color: green;
+	margin: 50px auto;
+	height: 500px;
+	width: 600px;
+	border-radius: 30px;
+}
+
+#game4 {
+	background-color: yellow;
+	margin: 50px auto;
+	height: 500px;
+	width: 600px;
+	border-radius: 30px;
+}
+
+#game5 {
+	background-color: black;
+	opacity: 0.5;
+	margin: 50px auto;
+	height: 500px;
+	width: 600px;
+	border-radius: 30px;
+}
+
+
+#game6 {
+	background-color: olive;
+	margin: 50px auto;
+	height: 500px;
+	width: 600px;
+	border-radius: 30px;
+}
+
+#game7 {
+	background-color: purple;
+	margin: 50px auto;
+	height: 500px;
+	width: 600px;
+	border-radius: 30px;
+}
+
+#game8 {
+	background-color: gray;
+	margin: 50px auto;
+	height: 500px;
+	width: 600px;
+	border-radius: 30px;
 }
