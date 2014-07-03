@@ -1,0 +1,22 @@
+#moneytimer {
+	font-family: Garamond;
+	font-size: 30px;
+	text-align: center;
+}
+
+.game {
+	background-color: #E8E8E8;
+	height: 300px;
+	width: 350px;
+	display: inline-block;
+	margin: 19px;
+	border-radius: 20px;
+	font-family: Century;
+	font-size: 30px;
+	text-align: center;
+
+}
+
+.header {
+
+}
