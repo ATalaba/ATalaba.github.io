@@ -4,6 +4,9 @@
 	text-align: center;
 }
 
+.willbecomegame {
+	display: inline-block;
+}
 .game {
 	background-color: #E8E8E8;
 	height: 300px;
@@ -18,72 +21,58 @@
 	transition: background-color 0.5s;
 }
 
+.almostgame {
+	height: 100px;
+	width: 200px;
+	display: inline-block;
+	margin: 19px;
+	
+	background-color: white;
+	border: 2px solid black;
+	font-family: Century;
+	font-size: 25px;
+}
+
 .game:hover {
 	background-color: #BEBEBE;
 }
 
-#game1 {
-	background-color: red;
+.realgame {
 	margin: 50px auto;
 	height: 500px;
 	width: 600px;
+	border-radius: 30px;
+}
+
+canvas {
 	border-radius: 30px;
 }
 
 #game2 {
 	background-color: blue;
-	margin: 50px auto;
-	height: 500px;
-	width: 600px;
-	border-radius: 30px;
 }
 
 #game3 {
 	background-color: green;
-	margin: 50px auto;
-	height: 500px;
-	width: 600px;
-	border-radius: 30px;
 }
 
 #game4 {
 	background-color: yellow;
-	margin: 50px auto;
-	height: 500px;
-	width: 600px;
-	border-radius: 30px;
 }
 
 #game5 {
 	background-color: black;
-	opacity: 0.5;
-	margin: 50px auto;
-	height: 500px;
-	width: 600px;
-	border-radius: 30px;
 }
 
 
 #game6 {
 	background-color: olive;
-	margin: 50px auto;
-	height: 500px;
-	width: 600px;
-	border-radius: 30px;
 }
 
 #game7 {
 	background-color: purple;
-	margin: 50px auto;
-	height: 500px;
-	width: 600px;
-	border-radius: 30px;
 }
 
 #game8 {
 	background-color: gray;
-	margin: 50px auto;
-	height: 500px;
-	width: 600px;
-	border-radius: 30px;
 }
