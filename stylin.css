@@ -4,6 +4,14 @@
 	text-align: center;
 }
 
+.enhancer {
+	height: 50px;
+	background-color: white;
+	width: 200px;
+	border-radius: 10px;
+	margin-left: 75px;
+}
+
 .willbecomegame {
 	display: inline-block;
 }
@@ -22,13 +30,14 @@
 }
 
 .almostgame {
-	height: 100px;
-	width: 200px;
+	height: 300px;
+	width: 350px;
 	display: inline-block;
+	text-align: center;
 	margin: 19px;
-	
+	border-radius: 20px;
 	background-color: white;
-	border: 2px solid black;
+	border: 1px solid black;
 	font-family: Century;
 	font-size: 25px;
 }
