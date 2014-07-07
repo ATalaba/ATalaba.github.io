@@ -3,6 +3,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="stylin.css">
+    
     	<title>Feels</title>
   </head>
   <body>
@@ -19,6 +20,32 @@
 
     <!--End of header-->
      
+    <div id="containter">
+    </div>
+    <script>
+    willtoalmostgames = [];
+    gameenhancers = [];
+    realgames = [];
+      function gamedivform() {
+        body = document.getElementsByTagName("body")[0];
+        var i;
+        for (i = 0; i<8; i++) {
+          willtoalmostgames[i] = document.createElement('div');
+          willtoalmostgames[i].setAttribute('class', 'willbecomegame');
+          gameenhancers[i] = document.createElement('div');
+          realgames[i] = document.createElement('div');
+          realgames[i].setAttribute('class', 'realgame');
+          realgames[i].setAttribute('id', 'game' + (i + 1));
+          realgames[i].setAttribute('onclick', 'closegame()');
+          document.getElementById('containter').appendChild(willtoalmostgames[i]);
+          willtoalmostgames[i].appendChild(gameenhancers[i]);
+        };
+        return willtoalmostgames;
+        return gameenhancers;
+        realgames = [];
+      }
+      
+    </script>
     <!--Start of games-->
     <script src="animations.js"></script>
   	</body>

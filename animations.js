@@ -1,4 +1,5 @@
 	//Creating the money (state is for stopping the money counter during a game) and updating it (important)
+gamedivform();
 var money = 0;
 var state = 0;
 window.setInterval(function() {
@@ -10,77 +11,63 @@ window.setInterval(function() {document.getElementById("moneyamount").innerHTML=
 	//Setting up body for future appends (important)
 var body = document.getElementsByTagName("body")[0];
 
-	//Creating the divs (boxes and actual games) (important)
-for (var i = 1; i < 9; i++) {
-	eval("var game" + i + "div = document.createElement('div')");
-	eval("var game" + i + "enhancer = document.createElement('div')");
-	eval("body.appendChild(game" + i + "div)");
-	eval("game" + i + "div.appendChild(game" + i + "enhancer)");
-	eval("game" + i + "enhancer.setAttribute('class', 'enhancer')");
-	eval("game" + i + "div.setAttribute('class', 'willbecomegame')");
-	eval("var game" + i + " = document.createElement('div')");
-	eval("game" + i + ".setAttribute('id', 'game" + i + "')");
-	eval("game" + i + ".setAttribute('class', 'realgame')");
-	eval("game" + i + ".setAttribute('onclick', 'closegame()')");
-}
-
 	//Making divs (to buy) off of money (important)
 function appear() {
 	switch (money) {
 		case 2:
-			if (game1div.getAttribute('class') == "willbecomegame") {
-				game1div.setAttribute('class', 'almostgame');
-				game1div.setAttribute('onclick', 'gameify1()');
-				game1div.innerHTML="<br><br><br><br>2 dollars<br> for the first game"
+			if (willtoalmostgames[0].getAttribute("class") == "willbecomegame") {
+				willtoalmostgames[0].setAttribute('class', 'almostgame');
+				willtoalmostgames[0].setAttribute('onclick', 'gameify1()');
+				willtoalmostgames[0].innerHTML="<br><br><br><br>2 dollars<br> for the first game</div>";
 			};
 			break;
 		case 10:
-			if (game2div.getAttribute('class') == "willbecomegame") {
-				game2div.setAttribute('class', 'almostgame');
-				game2div.setAttribute('onclick', 'gameify2()');
-				game2div.innerHTML="<br><br><br><br>10 dollars<br> for the second game"
+			if (willtoalmostgames[1].getAttribute("class") == "willbecomegame") {
+				willtoalmostgames[1].setAttribute('class', 'almostgame');
+				willtoalmostgames[1].setAttribute('onclick', 'gameify2()');
+				willtoalmostgames[1].innerHTML="<br><br><br><br>10 dollars<br> for the first game</div>";
 			};
 			break;
 		case 50:
-			if (game3div.getAttribute('class') == 'willbecomegame') {
-				game3div.setAttribute('class', 'almostgame');
-				game3div.setAttribute('onclick', 'gameify3()');
-				game3div.innerHTML="<br><br><br><br>50 dollars<br> for the third game"
+			if (willtoalmostgames[2].getAttribute("class") == "willbecomegame") {
+				willtoalmostgames[2].setAttribute('class', 'almostgame');
+				willtoalmostgames[2].setAttribute('onclick', 'gameify3()');
+				willtoalmostgames[2].innerHTML="<br><br><br><br>50 dollars<br> for the first game</div>";
 			};
 			break;
 		case 100:
-			if (game4div.getAttribute('class') == 'willbecomegame') {
-				game4div.setAttribute('class', 'almostgame');
-				game4div.setAttribute('onclick', 'gameify4()');
-				game4div.innerHTML="<br><br><br><br>100 dollars<br> for the fourth game"
+			if (willtoalmostgames[3].getAttribute("class") == "willbecomegame") {
+				willtoalmostgames[3].setAttribute('class', 'almostgame');
+				willtoalmostgames[3].setAttribute('onclick', 'gameify4()');
+				willtoalmostgames[3].innerHTML="<br><br><br><br>100 dollars<br> for the first game</div>";
 			};
 			break;
 		case 500:
-			if (game5div.getAttribute('class') == 'willbecomegame') {
-				game5div.setAttribute('class', 'almostgame');
-				game5div.setAttribute('onclick', 'gameify5()');
-				game5div.innerHTML="<br><br><br><br>500 dollars<br> for the fifth game"
+			if (willtoalmostgames[4].getAttribute("class") == "willbecomegame") {
+				willtoalmostgames[4].setAttribute('class', 'almostgame');
+				willtoalmostgames[4].setAttribute('onclick', 'gameify5()');
+				willtoalmostgames[4].innerHTML="<br><br><br><br>500 dollars<br> for the first game</div>";
 			};
 			break;
 		case 1000:
-			if (game6div.getAttribute('class') == 'willbecomegame') {
-				game6div.setAttribute('class', 'almostgame');
-				game6div.setAttribute('onclick', 'gameify6()');
-				game6div.innerHTML="<br><br><br><br>1000 dollars<br> for the sixth game"
+			if (willtoalmostgames[5].getAttribute("class") == "willbecomegame") {
+				willtoalmostgames[5].setAttribute('class', 'almostgame');
+				willtoalmostgames[5].setAttribute('onclick', 'gameify6()');
+				willtoalmostgames[5].innerHTML="<br><br><br><br>1000 dollars<br> for the first game</div>";
 			};
 			break;
 		case 2000:
-			if (game7div.getAttribute('class') == 'willbecomegame') {
-				game7div.setAttribute('class', 'almostgame');
-				game7div.setAttribute('onclick', 'gameify7()');
-				game7div.innerHTML="<br><br><br><br>2000 dollars<br> for the seventh game"
+			if (willtoalmostgames[6].getAttribute("class") == "willbecomegame") {
+				willtoalmostgames[6].setAttribute('class', 'almostgame');
+				willtoalmostgames[6].setAttribute('onclick', 'gameify7()');
+				willtoalmostgames[6].innerHTML="<br><br><br><br>2000 dollars<br> for the first game</div>";
 			};
 			break;
 		case 5000:
-			if (game8div.getAttribute('class') == 'willbecomegame') {
-				game8div.setAttribute('class', 'almostgame');
-				game8div.setAttribute('onclick', 'gameify8()');
-				game8div.innerHTML="<br><br><br><br>5000 dollars<br> for the eighth game"
+			if (willtoalmostgames[7].getAttribute("class") == "willbecomegame") {
+				willtoalmostgames[7].setAttribute('class', 'almostgame');
+				willtoalmostgames[7].setAttribute('onclick', 'gameify8()');
+				willtoalmostgames[7].innerHTML="<br><br><br><br>5000 dollars<br> for the first game</div>";
 			};
 			break;
 	}
@@ -90,72 +77,72 @@ function appear() {
 function gameify1() {
 	if (money >= 2) {
 		money -= 2;
-		game1div.setAttribute('class', 'game');
-		game1div.setAttribute('onclick', 'game1open()');
-		game1div.innerHTML="<br><br><br><br>Hit the clouds<br><br><div id='game1enhancer' class='enhancer'></div>";
+		willtoalmostgames[0].setAttribute('class', 'game');
+		willtoalmostgames[0].setAttribute('onclick', "game1open()");
+		willtoalmostgames[0].innerHTML="<br><br><br><br>Hit the clouds<br><br><div id='game1enhancer' class='enhancer'></div>";
 	}
 }
 
 function gameify2() {
 	if (money >= 10) {
 		money -= 10;
-		game2div.setAttribute('class', 'game');
-		game2div.setAttribute('onclick', 'game2open()');
-		game2div.innerHTML="<br><br><br><br>Hit the clouds";
+		willtoalmostgames[1].setAttribute('class', 'game');
+		willtoalmostgames[1].setAttribute('onclick', 'game2open()');
+		willtoalmostgames[1].innerHTML="<br><br><br><br>Hit the clouds<br><br><div id='game2enhancer' class='enhancer'></div>";
 	}
 }
 
 function gameify3() {
 	if (money >= 50) {
 		money -= 50;
-		game3div.setAttribute('class', 'game');
-		game3div.setAttribute('onclick', 'game3open()');
-		game3div.innerHTML="<br><br><br><br>Hit the clouds";
+		willtoalmostgames[2].setAttribute('class', 'game');
+		willtoalmostgames[2].setAttribute('onclick', 'game3open()');
+		willtoalmostgames[2].innerHTML="<br><br><br><br>Hit the clouds<br><br><div id='game3enhancer' class='enhancer'></div>";
 	}
 }
 
 function gameify4() {
 	if (money >= 100) {
 		money -= 100;
-		game4div.setAttribute('class', 'game');
-		game4div.setAttribute('onclick', 'game4open()');
-		game4div.innerHTML="<br><br><br><br>Hit the clouds";
+		willtoalmostgames[3].setAttribute('class', 'game');
+		willtoalmostgames[3].setAttribute('onclick', 'game4open()');
+		willtoalmostgames[3].innerHTML="<br><br><br><br>Hit the clouds<br><br><div id='game4enhancer' class='enhancer'></div>";
 	}
 }
 
 function gameify5() {
 	if (money >= 500) {
 		money -= 500;
-		game5div.setAttribute('class', 'game');
-		game5div.setAttribute('onclick', 'game5open()');
-		game5div.innerHTML="<br><br><br><br>Hit the clouds";
+		willtoalmostgames[4].setAttribute('class', 'game');
+		willtoalmostgames[4].setAttribute('onclick', 'game5open()');
+		willtoalmostgames[4].innerHTML="<br><br><br><br>Hit the clouds<br><br><div id='game5enhancer' class='enhancer'></div>";
 	}
 }
 
 function gameify6() {
 	if (money >= 1000) {
 		money -= 1000;
-		game6div.setAttribute('class', 'game');
-		game6div.setAttribute('onclick', 'game6open()');
-		game6div.innerHTML="<br><br><br><br>Hit the clouds";
+		willtoalmostgames[5].setAttribute('class', 'game');
+		willtoalmostgames[5].setAttribute('onclick', 'game6open()');
+		willtoalmostgames[5].innerHTML="<br><br><br><br>Hit the clouds<br><br><div id='game6enhancer' class='enhancer'></div>";
 	}
 }
 
 function gameify7() {
 	if (money >= 2000) {
 		money -= 2000;
-		game7div.setAttribute('class', 'game');
-		game7div.setAttribute('onclick', 'game7open()');
-		game7div.innerHTML="<br><br><br><br>Hit the clouds";
+		willtoalmostgames[6].setAttribute('class', 'game');
+		willtoalmostgames[6].setAttribute('onclick', 'game7open()');
+		willtoalmostgames[6].innerHTML="<br><br><br><br>Hit the clouds<br><br><div id='game7enhancer' class='enhancer'></div>";
 	}
 }
 
 function gameify8() {
 	if (money >= 5000) {
 		money -= 5000;
-		game8div.setAttribute('class', 'game');
-		game8div.setAttribute('onclick', 'game8open()');
-		game8div.innerHTML="<br><br><br><br>Hit the clouds";
+		willtoalmostgames[7].setAttribute('class', 'game');
+		willtoalmostgames[7].setAttribute('onclick', 'game8open()');
+		willtoalmostgames[7].innerHTML="<br><br><br><br>Hit the clouds<br><br><div id='game8enhancer' class='enhancer'></div>";
 	}
 }
 
@@ -170,7 +157,7 @@ function game1open() {
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
-	body.appendChild(game1);
+	body.appendChild(realgames[0]);
 		//Creating the canvas inside game1
 	var canvas = document.createElement("canvas");
 	var ctx = canvas.getContext("2d");
@@ -278,7 +265,7 @@ function game2open() {
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
-	body.appendChild(game2);
+	containter.appendChild(realgames[1]);
 }
 
 	//Game3
@@ -287,7 +274,7 @@ function game3open() {
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
-	body.appendChild(game3);
+	body.appendChild(realgames[2]);
 }
 
 	//Game4
@@ -296,7 +283,7 @@ function game4open() {
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
-	body.appendChild(game4);
+	body.appendChild(realgames[3]);
 }
 
 	//Game5
@@ -305,7 +292,7 @@ function game5open() {
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
-	body.appendChild(game5);
+	body.appendChild(realgames[4]);
 }
 
 	//Game6
@@ -314,7 +301,7 @@ function game6open() {
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
-	body.appendChild(game6);
+	body.appendChild(realgames[5]);
 }
 
 	//Game7
@@ -323,7 +310,7 @@ function game7open() {
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
-	body.appendChild(game7);
+	body.appendChild(realgames[6]);
 }
 
 	//Game8
@@ -332,7 +319,7 @@ function game8open() {
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
-	body.appendChild(game8);
+	body.appendChild(realgames[7]);
 }
 	
 	//Closing games off of clicks

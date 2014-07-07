@@ -10,6 +10,12 @@
 	width: 200px;
 	border-radius: 10px;
 	margin-left: 75px;
+	-webkit-transition: background-color 0.5s;
+	transition: background-color 0.5s;
+}
+
+.enhancer:hover {
+	background-color: #4F4F4F;
 }
 
 .willbecomegame {
