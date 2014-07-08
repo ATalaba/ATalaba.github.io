@@ -118,6 +118,9 @@ function game1open() {
 		
 		then = now;
 		requestAnimationFrame(main);
+		var w = window;
+		requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
+
 	}
 		//Yeah I have no idea what this actually does
 	var then = Date.now();

@@ -15,5 +15,5 @@ function buyingUpdate() {
 }
 
 function G1ChangePlayerSpeed() {
-
+	document.getElementById('game1enhancer1').setAttribute('speed', '300');
 }
