@@ -117,10 +117,10 @@ function game1open() {
 		update(delta/1000);
 		
 		then = now;
-		requestAnimationFrame(main);
+		
 		var w = window;
 		requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
-
+requestAnimationFrame(main);
 	}
 		//Yeah I have no idea what this actually does
 	var then = Date.now();
