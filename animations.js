@@ -79,7 +79,7 @@ function gameify1() {
 		money -= 2;
 		willtoalmostgames[0].setAttribute('class', 'game');
 		willtoalmostgames[0].setAttribute('onclick', "game1open()");
-		willtoalmostgames[0].innerHTML="<br><br><br><br>Hit the clouds<br><br><div id='game1enhancer' class='enhancer'></div>";
+		willtoalmostgames[0].innerHTML="<br><br>Hit the clouds<br><br><div id='game1enhancer1' speed=50></div><br><div id='game1enhancer2'></div><br><div id='game1enhancer3'></div>";
 	}
 }
 
@@ -148,120 +148,13 @@ function gameify8() {
 
 	//Updating available divs based off of money available (important)
 window.setInterval(function() {
-	appear()}, 100);
+	appear(); buyingUpdate()}, 100);
 
-	//Game1
-function game1open() {
-		//---------- Uncommenting states will cause auto money gain to stop during games ----------
-	//state = 1
-	$('.game').hide();
-	$('.willbecomegame').hide();
-	$('.almostgame').hide();
-	body.appendChild(realgames[0]);
-		//Creating the canvas inside game1
-	var canvas = document.createElement("canvas");
-	var ctx = canvas.getContext("2d");
-	canvas.width = 600;
-	canvas.height = 500;
-	game1.appendChild(canvas);
-		//Background image (tbh I'm not entire sure what the rest of this code means, I sort of just 
-		// copied it from http://www.lostdecadegames.com/how-to-make-a-simple-html5-canvas-game/)
-	var bgReady = false;
-	var bgImage = new Image();
-	bgImage.onload = function () {
-		bgReady = true;
-	};
-	bgImage.src = "images/G1Sky.png";
-		//Player circle image
-	var playerReady = false;
-	var playerImage = new Image();
-	playerImage.onload = function () {
-		playerReady = true;
-	};
-	playerImage.src = "images/G1Player.png";
-	var cloudReady = false;
-	var cloudImage = new Image();
-	cloudImage.onload = function() {
-		cloudReady = true;
-	};
-	cloudImage.src = "images/G1Cloud.png";
-		//Initiate the player  (I'm not sure I know what the word initiate means)
-	var player = {
-		speed: 256,
-		x: 100,
-		y: 300,
-	};
-		//Initiate the clouds (same warning as above)
-	var cloud = {
-		speed: 100,
-		x: 0,
-		y: 0,
-	}
-		//Keyboard Controls (lol i have ABSOLUTELY no idea what this means/does)
-	var keysDown = {};
 
-	addEventListener("keydown", function (e) {
-		keysDown[e.keyCode] = true;
-	}, false);
-	addEventListener("keyup", function (e) {
-		delete keysDown[e.keyCode];
-	}, false);
-		//Resets the game (which is unnecessary but I don't know how to do it without it so there)
-	var reset = function () {
-
-	}
-		//Updates game objects or whatever
-	var update = function (modifier) {
-		if (38 /*why 38 why this code */ in keysDown) { //Apparently if the key is up iunno
-			player.y -= player.speed * modifier;
-		};
-		if (40 /*Maybe these represent the keys somehow */ in keysDown) { //Player holding down
-			player.y += player.speed * modifier;
-		};
-		if (37 in keysDown) { //Player holding left
-			player.x -= player.speed * modifier;
-		};
-		if (39 in keysDown) { //Player holding down
-			player.x += player.speed * modifier;
-		};
-		//for (var i = 1; i < 6; i++) {
-		//	cloud[i].x -= cloud.speed * modifier;
-		//};
-	}
-		//Create all the images
-	var render = function () {
-		if (bgReady) {
-			ctx.drawImage(bgImage, 0, 0);
-		};
-		if (playerReady) {
-			ctx.drawImage(playerImage, player.x, player.y);
-		};
-		if (cloudReady) {
-			for (var i = 1; i < 6; i++) {
-				cloud.x = 100 * i;
-				cloud.y = Math.random() * 300;
-				ctx.drawImage(cloudImage, cloud.x, cloud.y);
-			};
-		};
-	};
-		//Updating rendering and game play
-	var main = function () {
-		var now = Date.now();
-		var delta = now - then;
-		update(delta/1000);
-		render();
-		then = now;
-		requestAnimationFrame(main);
-	}
-		//Yeah I have no idea what this actually does
-	var then = Date.now();
-		//Running the game
-	main();
-}
 
 	//Game2
 function game2open() {
-	//state = 1
+	state = 1
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
@@ -270,7 +163,7 @@ function game2open() {
 
 	//Game3
 function game3open() {
-	//state = 1
+	state = 1
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
@@ -279,7 +172,7 @@ function game3open() {
 
 	//Game4
 function game4open() {
-	//state = 1
+	state = 1
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
@@ -288,7 +181,7 @@ function game4open() {
 
 	//Game5
 function game5open() {
-	//state = 1
+	state = 1
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
@@ -297,7 +190,7 @@ function game5open() {
 
 	//Game6
 function game6open() {
-	//state = 1
+	state = 1
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
@@ -306,7 +199,7 @@ function game6open() {
 
 	//Game7
 function game7open() {
-	//state = 1
+	state = 1
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
@@ -315,7 +208,7 @@ function game7open() {
 
 	//Game8
 function game8open() {
-	//state = 1
+	state = 1
 	$('.game').hide();
 	$('.willbecomegame').hide();
 	$('.almostgame').hide();
@@ -329,5 +222,5 @@ function closegame() {
 	$('.game').show();
 	$('.willbecomegame').show();
 	$('.almostgame').show();
-	//state = 0;
+	state = 0;
 }

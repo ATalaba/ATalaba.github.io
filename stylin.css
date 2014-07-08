@@ -1,3 +1,7 @@
+div {
+	line-height: 22px;
+}
+
 #moneytimer {
 	font-family: Garamond;
 	font-size: 30px;
@@ -5,11 +9,13 @@
 }
 
 .enhancer {
-	height: 50px;
+	height: 40px;
 	background-color: white;
-	width: 200px;
+	width: 300px;
 	border-radius: 10px;
-	margin-left: 75px;
+	margin-left: 27px;
+	line-height: 8px;
+	font-size: 20px;
 	-webkit-transition: background-color 0.5s;
 	transition: background-color 0.5s;
 }
