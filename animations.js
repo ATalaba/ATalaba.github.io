@@ -150,7 +150,7 @@ function gameify8() {
 window.setInterval(function() {
 	appear(); buyingUpdate()}, 100);
 
-function closeGamesIThink
+//function closeGamesIThink
 
 	//Game2
 function game2open() {
