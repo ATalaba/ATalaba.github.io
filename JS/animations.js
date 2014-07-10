@@ -135,41 +135,6 @@ function closeGamesIThink(arg) {
 	$('.almostgame').hide();
 	body.appendChild(realgames[arg]);
 }
-
-	//Game2
-function game2open() {
-	closeGamesIThink(1);
-}
-
-	//Game3
-function game3open() {
-	closeGamesIThink(2);
-}
-
-	//Game4
-function game4open() {
-	closeGamesIThink(3);
-}
-
-	//Game5
-function game5open() {
-	closeGamesIThink(4);
-}
-
-	//Game6
-function game6open() {
-	closeGamesIThink(5);
-}
-
-	//Game7
-function game7open() {
-	closeGamesIThink(6);
-}
-
-	//Game8
-function game8open() {
-	closeGamesIThink(7);
-}
 	
 	//Closing games off of clicks
 function closegame() {
