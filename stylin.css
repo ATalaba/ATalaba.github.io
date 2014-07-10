@@ -10,7 +10,7 @@ div {
 
 .enhancer {
 	height: 40px;
-	background-color: white;
+	background-color: #BBFFFF;
 	width: 300px;
 	border-radius: 10px;
 	margin-left: 27px;
@@ -21,7 +21,7 @@ div {
 }
 
 .enhancer:hover {
-	background-color: #4F4F4F;
+	background-color: #8FD8D8;
 }
 
 .willbecomegame {

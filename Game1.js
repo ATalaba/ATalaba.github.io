@@ -1,6 +1,7 @@
 	//Game1
 function game1open() {
 		//---------- Commenting states will cause auto money gain during games ----------
+	if (!($(".enhancer:hover").length)) {
 	state = 1
 	$('.game').hide();
 	$('.willbecomegame').hide();
@@ -120,10 +121,11 @@ function game1open() {
 		
 		var w = window;
 		requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
-requestAnimationFrame(main);
+		requestAnimationFrame(main);
 	}
 		//Yeah I have no idea what this actually does
 	var then = Date.now();
 		//Running the game
 	main();
+	};
 }

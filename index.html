@@ -9,8 +9,6 @@
   <body>
     <script src="jQuery.js"></script>
     <script src="jQuery.color.js"></script>
-    <script src="Buyingdivupdate.js"></script>
-    <script src="Game1.js"></script>
 
     <!--Start of header-->
 
@@ -27,7 +25,6 @@
     </div>
     <script>
     willtoalmostgames = [];
-    gameenhancers = [];
     realgames = [];
       function gamedivform() {
         body = document.getElementsByTagName("body")[0];
@@ -35,13 +32,11 @@
         for (i = 0; i<8; i++) {
           willtoalmostgames[i] = document.createElement('div');
           willtoalmostgames[i].setAttribute('class', 'willbecomegame');
-          gameenhancers[i] = document.createElement('div');
           realgames[i] = document.createElement('div');
           realgames[i].setAttribute('class', 'realgame');
           realgames[i].setAttribute('id', 'game' + (i + 1));
           realgames[i].setAttribute('onclick', 'closegame()');
           document.getElementById('containter').appendChild(willtoalmostgames[i]);
-          willtoalmostgames[i].appendChild(gameenhancers[i]);
         };
         return willtoalmostgames;
         return gameenhancers;
@@ -51,5 +46,7 @@
     </script>
     <!--Start of games-->
     <script src="animations.js"></script>
+    <script src="Buyingdivupdate.js"></script>
+    <script src="Game1.js"></script>
   	</body>
 </html>
