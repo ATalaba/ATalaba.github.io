@@ -2,11 +2,7 @@
 function game1open() {
 		//---------- Commenting states will cause auto money gain during games ----------
 	if (!($(".enhancer:hover").length)) {
-	state = 1
-	$('.game').hide();
-	$('.willbecomegame').hide();
-	$('.almostgame').hide();
-	body.appendChild(realgames[0]);
+	closeGamesIThink(0);
 		//Creating the canvas inside game1
 	var canvas = document.createElement("canvas");
 	var ctx = canvas.getContext("2d");
@@ -42,7 +38,7 @@ function game1open() {
 	};
 		//Initiate the clouds (same warning as above)
 	var cloud = [];
-	j = 6;
+	j = document.getElementById('game1enhancer2').getAttribute('cloudnumber');
 	for (var i = 1; i < j; i++) {
 		cloud[i] = {
 			speed: 100 + (i * 50) + Math.random() * i * 200,
@@ -84,7 +80,7 @@ function game1open() {
 				&& cloud[i].x <= (player.x + 25)
 				&& player.y <= (cloud[i].y + 159)
 				&& cloud[i].y <= (player.y + 25)) {
-					money += 1;
+					money += parseInt(document.getElementById('game1enhancer3').getAttribute('cloudvalue'));
 					cloud.splice(i, 1);
 					j -= 1;
 					break;
