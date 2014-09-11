@@ -7,7 +7,7 @@ var G1Specials = [['speed', 'cloudnumber', 'cloudvalue'], [], [], [], [], [], []
 var G1SpecialValues = [[50, 6, 1], [], [], [], [], [], [], []]
 window.setInterval(function() {
     if (state == 0) {money += 1}; 
-	}, 1500);
+	}, 100);
 	//Updating the money shown on the counter (important)
 window.setInterval(function() {document.getElementById("moneyamount").innerHTML=money}, 100);
 

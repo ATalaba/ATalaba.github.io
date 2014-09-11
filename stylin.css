@@ -15,7 +15,7 @@ div {
 	border-radius: 10px;
 	margin-left: 27px;
 	line-height: 8px;
-	font-size: 20px;
+	font-size: 15px;
 	-webkit-transition: background-color 0.5s;
 	transition: background-color 0.5s;
 }
@@ -69,9 +69,6 @@ canvas {
 	border-radius: 30px;
 }
 
-#game2 {
-	background-color: blue;
-}
 
 #game3 {
 	background-color: green;
