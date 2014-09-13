@@ -1,6 +1,6 @@
 html {
-	height: 50em;
-	font-family: 'Karla', sans-serif;
+	height: 100%;
+	font-family: 'Ruda', sans-serif;
 }
 
 body {
@@ -73,6 +73,7 @@ body {
 	margin: 0;
 	font-size: 6em;
 	text-shadow: 1px 2px 3px black;
+	font-family: 'Rancho', cursive;
 }
 
 .about {
@@ -85,6 +86,6 @@ body {
 	margin: 0 auto;
 	font-size: 3em;
 	text-shadow: 1px 2px 3px black;
-	
+
 
 }
