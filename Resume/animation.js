@@ -15,3 +15,10 @@ function header() {
     });
 }
 window.onload = header();
+
+$('.navli, .name').click(function(e) {
+    $('hmtl, body').animate({
+        scrollTop: $('.' + $(this).attr('id')).offset().top},
+        'slow', function() {});
+    console.log("." + $(this).attr('id') + "  " + $('.' + $(this).attr('id')).offset().top)
+});
