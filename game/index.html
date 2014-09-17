@@ -1,0 +1,58 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" type="text/css" href="stylin.css">
+    
+    	<title>Feels</title>
+  </head>
+  <body>
+    <script src="JS/jQuery.js"></script>
+    <script src="JS/jQuery.color.js"></script>
+
+    <!--Start of header-->
+
+  	<div class="header">
+      <br>
+      <div id="moneytimer">
+        Money: <span id = "moneyamount">0</span>
+      </div>
+  	</div>
+
+    <!--End of header-->
+     
+    <div id="containter">
+    </div>
+    <script>
+    willtoalmostgames = [];
+    realgames = [];
+      function gamedivform() {
+        body = document.getElementsByTagName("body")[0];
+        var i;
+        for (i = 0; i<8; i++) {
+          willtoalmostgames[i] = document.createElement('div');
+          willtoalmostgames[i].setAttribute('class', 'willbecomegame');
+          realgames[i] = document.createElement('div');
+          realgames[i].setAttribute('class', 'realgame');
+          realgames[i].setAttribute('id', 'game' + (i + 1));
+          realgames[i].setAttribute('onclick', 'closegame()');
+          document.getElementById('containter').appendChild(willtoalmostgames[i]);
+        };
+        return willtoalmostgames;
+        realgames = [];
+      }
+      
+    </script>
+    <!--Start of games-->
+    <script src="JS/animations.js"></script>
+    <script src="JS/Buyingdivupdate.js"></script>
+    <script src="JS/Games/Game1.js"></script>
+    <script src="JS/Games/Game2.js"></script>
+    <script src="JS/Games/Game3.js"></script>
+    <script src="JS/Games/Game4.js"></script>
+    <script src="JS/Games/Game5.js"></script>
+    <script src="JS/Games/Game6.js"></script>
+    <script src="JS/Games/Game7.js"></script>
+    <script src="JS/Games/Game8.js"></script>
+  	</body>
+</html>

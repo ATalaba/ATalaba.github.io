@@ -1,7 +1,7 @@
 function header() {
     window.addEventListener('scroll', function(e){
         var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-            shrinkOn = 400,
+            shrinkOn = 10,
             header = document.getElementById("head");
         if (distanceY > shrinkOn) {
             header.style.backgroundColor = "rgb(0, 19, 178)";

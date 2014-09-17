@@ -1,58 +1,52 @@
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="stylin.css">
-    
-    	<title>Feels</title>
-  </head>
-  <body>
-    <script src="JS/jQuery.js"></script>
-    <script src="JS/jQuery.color.js"></script>
+<!DOCTYPE html>
+<html>
 
-    <!--Start of header-->
+	<head>
+		<title>Andrei's Works</title>
+		<link href='http://fonts.googleapis.com/css?family=Rancho|Ruda' rel='stylesheet' type='text/css'>
+		<link href='style.css' rel='stylesheet'>
+		<meta name="viewport" content="width=device-width; initial-scale = 1.0; maximum-scale=1.0;" />
+	</head>
 
-  	<div class="header">
-      <br>
-      <div id="moneytimer">
-        Money: <span id = "moneyamount">0</span>
-      </div>
-  	</div>
+	<body>
+		<!--<div class="splash panel">
+			<h2 class='welcome'>Hi!</h2>
 
-    <!--End of header-->
-     
-    <div id="containter">
-    </div>
-    <script>
-    willtoalmostgames = [];
-    realgames = [];
-      function gamedivform() {
-        body = document.getElementsByTagName("body")[0];
-        var i;
-        for (i = 0; i<8; i++) {
-          willtoalmostgames[i] = document.createElement('div');
-          willtoalmostgames[i].setAttribute('class', 'willbecomegame');
-          realgames[i] = document.createElement('div');
-          realgames[i].setAttribute('class', 'realgame');
-          realgames[i].setAttribute('id', 'game' + (i + 1));
-          realgames[i].setAttribute('onclick', 'closegame()');
-          document.getElementById('containter').appendChild(willtoalmostgames[i]);
-        };
-        return willtoalmostgames;
-        realgames = [];
-      }
-      
-    </script>
-    <!--Start of games-->
-    <script src="JS/animations.js"></script>
-    <script src="JS/Buyingdivupdate.js"></script>
-    <script src="JS/Games/Game1.js"></script>
-    <script src="JS/Games/Game2.js"></script>
-    <script src="JS/Games/Game3.js"></script>
-    <script src="JS/Games/Game4.js"></script>
-    <script src="JS/Games/Game5.js"></script>
-    <script src="JS/Games/Game6.js"></script>
-    <script src="JS/Games/Game7.js"></script>
-    <script src="JS/Games/Game8.js"></script>
-  	</body>
+			<h4 class='welcome' style='font-size: 5em; margin-top: 20vh'>My name is Andrei</h4>
+		</div>
+
+		<div class="intro">
+			<h4 class='welcome' style='font-size: 5em'>And I like programming</h4>
+		</div>
+
+		<div class="about panel">
+
+		</div>-->
+		<div class='header' id='head'>
+			<div class='name int' style='font-size: 1.3em; font-weight: bold' id='splash'>ANDREI TALABA</div>
+			<ul class='nav int'>
+				<li class='navli' id='about'>ABOUT</li>
+				<li class='navli' id='projects'>PROJECTS</li>
+				<li class='navli' id='contact'>CONTACT</li>
+			</ul>
+		</div>
+
+		<div class='splash panel'>
+			<h2 class='splashtext int' >Hello!</h2>
+		</div>
+
+		<div class='about panel'>
+			<h2 class='abouttext' style='padding-top: 10%'>My name is Andrei Talaba!</h2><br><br><h2 class='abouttext'>I'm a college undergraduate, pursuing a biology and computer science double major at Cornell University.</h2>
+		</div>
+
+		<div class='projects panel'>
+		</div>
+
+		<div class='contact panel'>
+		</div>
+
+		<script src='jQuery.js'></script>
+		<script src='animation.js'></script>
+	</body>
+
 </html>

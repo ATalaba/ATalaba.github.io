@@ -6,6 +6,7 @@ html {
 body {
 	margin: 0;
 	height: 100%;
+	font-size: 100%;
 }
 
 #head {
@@ -86,6 +87,28 @@ body {
 	margin: 0 auto;
 	font-size: 3em;
 	text-shadow: 1px 2px 3px black;
-
-
 }
+
+.projects {
+	background-color: red;
+}
+
+@media only screen and (max-width: 1000px) {
+	body {font-size: 56%;}
+	.name {display: inline-block;}
+	.nav {visibility: hidden}
+	.panel {}
+	.splash {background: none;
+		background-color: yellow;
+		width: 100%; }
+	.splashtext {display: inline-block;	}
+}
+
+/*@media only screen and (max-width: 500px) and (min-width: 0px) {
+	body {font-size: 40%;}
+	.header {width: 100%}
+	.nav {visibility: hidden}
+	.splashtext {
+		margin-left: 0px;
+	}
+}*/
