@@ -8,7 +8,14 @@ body {
 	height: 100%;
 	font-size: 100%;
 }
+/*Useful vertical alignment class*/
+.int {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+}
 
+/*Header*/
 #head {
 	-webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
@@ -24,12 +31,7 @@ body {
 	font-size: 2em;
 	color: white;
 	text-shadow: 1px 2px 3px black;
-}
-
-.int {
-	position: relative;
-  	top: 50%;
-  	transform: translateY(-50%);
+	z-index: 100;
 }
 
 .name {
@@ -57,42 +59,126 @@ body {
 	color: red;
 }
 
-.panel {
-	width: 100%;
-	height: 100%;
-	max-width: 100%;
-}
+/*End Header*/
 
+/*Picture panel*/
 .splash {
-	background: url('splash.jpg');
+	background: url('splash.jpg') fixed;
 	background-size: cover;
 	text-align: center;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	z-index: 90;
 }
+/*End picture*/
 
-.splashtext {
+/*Picture panel text and forms*/
+#inputName {
+	display: inline-flex;
+	margin: 0 auto;
 	color: white;
-	margin: 0;
 	font-size: 6em;
 	text-shadow: 1px 2px 3px black;
 	font-family: 'Rancho', cursive;
 }
 
-.about {
-	background-color: #FFD02D;
-	text-align: center;
+/*Form*/
+button {
+	visibility: hidden;
+	margin-bottom: 0px;
 }
 
-.abouttext {
+input {
+	border: none;
+	background-color: transparent;
 	color: white;
-	margin: 0 auto;
-	font-size: 3em;
-	text-shadow: 1px 2px 3px black;
+  	font-family: 'Rancho', cursive;
+  	text-shadow: 1px 2px 3px black;
+  	font-size: 1em;
+  	outline: none;
+  	margin-left: 0.5em;
+  	margin-right: 0.3em;
+  	overflow: auto;
+  	width: 5em;
+  	max-width: 800px;
+  	transition: width 0.1s;
 }
 
+input:focus {
+	border-bottom: white solid 1px;
+}
+
+#hidden {
+	visibility: hidden
+}
+/*End of form*/
+/*Cool little x*/
+#x:hover {
+	opacity: 1;
+}
+
+#x {
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-size: .5em;
+	color: gray;
+	opacity: 0.5;
+	visibility: hidden;
+	padding: 0;
+	width: 1em;
+	height: 1em;
+}
+/*End of cool little x*/
+/*End of picture text*/
+
+/*Generic panel class*/
+.panel {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+/*End generic panel class*/
+
+/*Generic card properties*/
+.card {
+	width: 80%;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 1.5px 1.5px 2px 2px #CECECE;
+}
+
+.cardTitle {
+	width: 90%;
+	height: 10%;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 1px solid #CECECE;
+	padding-top: 0.5em;
+}
+/*End generic cards*/
+
+/*About specifics*/
+.about {
+	background-color: #ECECEC;
+	text-align: center;
+	padding-top: 10em;
+	box-shadow: inset 0 20px 20px -20px rgba(0,0,0,0.8);
+}
+
+#mypic {
+	margin-top: 2%;
+	width: 20%;
+}
+/*End about specifics*/
+
+/*Projects specifics*/
 .projects {
 	background-color: red;
 }
+/*End projects specifics*/
 
+/*Responsiveness*/
 @media only screen and (max-width: 1000px) {
 	body {font-size: 56%;}
 	.name {display: inline-block;}
