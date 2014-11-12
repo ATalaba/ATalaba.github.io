@@ -76,8 +76,6 @@ function G1Change(argm, argk) {
 		document.getElementById('game' + (argm + 1) + 'enhancer' + (argk + 1)).setAttribute(G1Values[argm][argk], G1Upgrades[argm][argk][G1Bought[argm][argk]]);
 		G1Bought[argm][argk] = G1Costs[argm][argk][G1Bought[argm][argk]];
 		G1BoughtTest[argm][argk] = G1Bought[argm][argk];
-		console.log(G1BoughtTest[argm][argk] + " Test");
-		console.log(G1Bought[argm][argk]);
 		document.getElementById('game' + (argm + 1) +'enhancer' + (argk + 1)).setAttribute('onclick', '');
 		document.getElementById('game' + (argm + 1) + 'enhancer' + (argk + 1)).innerHTML=""
 	};

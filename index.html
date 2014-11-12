@@ -35,34 +35,58 @@
 					<img id='mypic' src='HeadShot.png'>
 					<h2>I am pursuing a double Computer Science and Economics major at Cornell University.  My name is Andrei, and I am a computer scientist.</h2>
 			</div>
-			<div id='aboutlikes' class='card side'>
-				<div class='cardTitle' style='font-size: 1.5em'><h2 class='int'>My Hobbies</h2></div>
-					<ul id='skills' class='lis'>
-						<li>Table Tennis <div class='bar'><div class='barfill' style='width: 70%'></div></div></li>
-						<li>Fencing <div class='bar'><div class='barfill' style='width: 60%'></div></div></li>
-						<li>Swing <div class='bar'><div class='barfill' style='width: 60%'></div></div></li>
-						<li>Karate <div class='bar'><div class='barfill' style='width: 40%'></div></div></li>
-						<li>Writing <div class='bar'><div class='barfill' style='width: 30%'></div></div></li>
-						<li>Piloting <div class='bar'><div class='barfill' style='width: 5%'></div></div></li>
+			<div id='aboutlikes' class='card side left'>
+				<div class='cardTitle' style='font-size: 1.5em'><h2 class='int'>My Hobbies <span style='color: grey; font-size: 0.3em'>(Click on me!)</span></h2></div>
+					<ul id='likes' class='lis'>
+						<li class='hobbyhover' id='1'>Table Tennis</li>
+						<h2 class='hide' id='1show'>One of my favorite things to do with my friends is play ping-pong.</h2>
+						<li class='hobbyhover' id='2'>Fencing</li>
+						<h2 class='hide' id='2show'>My favorite sport is fencing.</h2>
+						<li class='hobbyhover' id='3'>Swing</li>
+						<h2 class='hide' id='3show'>I love the feeling of freedom you get when you swing.</h2>
+						<li class='hobbyhover' id='4'>Karate</li>
+						<h2 class='hide' id='4show'>I started by taking Cornell's Introduction to Karate class.</h2>
+						<li class='hobbyhover' id='5'>Writing</li>
+						<h2 class='hide' id='5show'>I love writing short stories and poems.</h2>
+						<li class='hobbyhover' id='6'>Piloting</li>
+						<h2 class='hide' id='6show'>I hope to eventually get my piloting license.</h2>
+					</ul>
 			</div>
-			<div id='aboutskills' class='card side'>
+			<div id='aboutskills' class='card side right'>
 				<div class='cardTitle' style='font-size: 1.5em'><h2 class='int'>My Skills</h2></div>
+					<ul id='selectors' class='horiz'>
+						<li id='all' class='select'>all</li>
+						<li id='web' class='select'>web</li>
+						<li id='misc' class='select'>misc</li>
+					</ul>
 					<ul id='skills' class='lis'>
-						<li>HTML <div class='bar'><div class='barfill' style='width: 85%'></div></div></li>
-						<li>CSS <div class='bar'><div class='barfill' style='width: 85%'></div></div></li>
-						<li>JavaScript <div class='bar'><div class='barfill' style='width: 70%'></div></div></li>
-						<li>Python <div class='bar'><div class='barfill' style='width: 70%'></div></div></li>
-						<li>jQuery <div class='bar'><div class='barfill' style='width: 65%'></div></div></li>
-						<li>NodeJS <div class='bar'><div class='barfill' style='width: 55%'></div></div></li>
-						<li>AngelScript <div class='bar'><div class='barfill' style='width: 50%'></div></div></li>
-						<li>ExpressJS <div class='bar'><div class='barfill' style='width: 50%'></div></div></li>
-						<li>SASS <div class='bar'><div class='barfill' style='width: 50%'></div></div></li>
-						<li>SocketIO <div class='bar'><div class='barfill' style='width: 45%'></div></div></li>
-						<li>MongoDB <div class='bar'><div class='barfill' style='width: 40%'></div></div></li>
+						<li id='html'>HTML/CSS*<div class='bar'><div class='barfill' style='width: 85%'></div></div></li>
+						<li id='js'>JavaScript* <div class='bar'><div class='barfill' style='width: 70%'></div></div></li>
+						<li id='python'>Python <div class='bar'><div class='barfill' style='width: 70%'></div></div></li>
+						<li id='jq'>jQuery* <div class='bar'><div class='barfill' style='width: 65%'></div></div></li>
+						<li id='njs'>NodeJS <div class='bar'><div class='barfill' style='width: 55%'></div></div></li>
+						<li id='as'>AngelScript <div class='bar'><div class='barfill' style='width: 50%'></div></div></li>
+						<li id='exjs'>ExpressJS <div class='bar'><div class='barfill' style='width: 50%'></div></div></li>
+						<li id='sass'>SASS <div class='bar'><div class='barfill' style='width: 50%'></div></div></li>
+						<li id='git'>Git <div class='bar'><div class='barfill' style='width: 50%'></div></div></li>
+						<li id='sio'>SocketIO <div class='bar'><div class='barfill' style='width: 45%'></div></div></li>
+						<li id='mdb'>MongoDB <div class='bar'><div class='barfill' style='width: 40%'></div></div></li>
+					</ul>
+					<span style='color: grey; font-size: 1em'>* used in this website</span>
+			</div>
+			<div id='aboutBlog' class='card side left'>
+				<div class='cardTitle' style='font-size: 1.5em'><h2 class='int'>My Blog</h2></div>
+					<h2>You can check my blog out on <a target='__blank' href='https://medium.com/@Atalaba'>Medium</a>!</h2>
+					
 			</div>
 			<div id='projects' class='projects card' style="clear: both; margin-top: 10%">
 				<div class='cardTitle'><h2 class='int'>My Projects</h2></div>
 					<h2>Almost all of my projects and attempts at playing with new languages can be found on GitHub</h2>
+					<div class='proj'>
+						<img class='leftpic' src='RandomPoemPic.png'>
+						<h2 class='righttext'>randompoems.me<br>
+						<span style='font-size:0.5em'>The first website I ever launched by myself. Purely front-end, and only meant to display my roommate's random poetry.</span></h2>
+					</div>
 			</div>
 		</div>
 

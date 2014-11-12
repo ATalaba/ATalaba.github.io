@@ -147,9 +147,10 @@ input:focus {
 	margin: 0 auto;
 	background-color: white;
 	box-shadow: 1.5px 1.5px 2px 2px #CECECE;
-	padding-bottom: 10%;
+	padding-bottom: 2%;
 	padding-left: 5%;
 	padding-right: 5%;
+	margin-bottom: 5%;
 }
 
 .cardTitle {
@@ -165,6 +166,21 @@ input:focus {
 	margin-bottom: 0px;
 }
 
+.side {
+	width: 35%;
+	padding-left: 0%;
+	padding-right: 0%;
+}
+
+.left {
+	float: left;
+	margin-left: 10%;
+}
+
+.right {
+	float: right; 
+	margin-right: 10%;
+}
 /*End generic cards*/
 
 /*About specifics*/
@@ -180,39 +196,62 @@ input:focus {
 	width: 20%;
 }
 
-.side {
-	width: 35%;
-	margin-top: 5%;
-	padding-left: 0%;
-	padding-right: 0%;
-	padding-bottom: 5%;
-}
-
-#aboutlikes {
-	float: left;
-	margin-left: 10%;
-}
-
-#aboutskills {
-	float: right; 
-	margin-right: 10%;
+.hide {
+	display: none;
+	font-size: 0.7em;
+	margin: 0 auto;
 	margin-bottom: 5%;
+	font-style: italic;
+}
+
+#likes {
+	margin: 0 auto;
+	margin-top: 7%;
+}
+
+a {
+	text-decoration: none;
+	color: red;
+}
+
+.horiz {
+	list-style: none;
+	display: inline-block;
+	width: 100%;
+	padding-left: 0%;
+}
+
+.select {
+	display: inline;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+.select:hover {
+	color: red;
 }
 /*End about specifics*/
 
 .lis {
 	text-align: center;
-	margin-top: 10%;
 	font-size: 1.5em;
 	list-style: none;
+	margin-top: 7%;
 	width: 90%;
-	padding-left: 0%
+	padding-left: 0%;
 }
 
 .lis li {
-	margin-bottom: 15%;
+	margin-bottom: 5%;
 	width: 100%;
+}
 
+.hobbyhover:hover {
+	color: red;
+}
+
+.hobbymargin {
+	margin-bottom: 5% !important
 }
 
 .bar {
@@ -230,6 +269,22 @@ input:focus {
 }
 
 /*Projects specifics*/
+.proj {
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.leftpic {
+	float: left;
+	width: 40%;
+}
+
+.righttext {
+	float: left;
+	margin-left: 5%;
+	width: 50%;
+}
 
 /*End projects specifics*/
 
@@ -238,18 +293,8 @@ input:focus {
 	body {font-size: 56%;}
 	.name {display: inline-block;}
 	.nav {visibility: hidden}
-	.panel {}
 	.splash {background: none;
 		background-color: #67BEE7;
 		width: 100%; }
 	.splashtext {display: inline-block;	}
 }
-
-/*@media only screen and (max-width: 500px) and (min-width: 0px) {
-	body {font-size: 40%;}
-	.header {width: 100%}
-	.nav {visibility: hidden}
-	.splashtext {
-		margin-left: 0px;
-	}
-}*/

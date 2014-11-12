@@ -45,4 +45,47 @@ $('.navli, .name').click(function(e) {
         scrollTop: $('.' + $(this).attr('id')).offset().top},
         'slow', function() {});
     console.log("." + $(this).attr('id') + "  " + $('.' + $(this).attr('id')).offset().top)
-});
+}); 
+
+/*$('.hobbyhover').hover(
+    function() {
+        $('#' + $(this).attr('id') + 'show').stop(true, false).show(200)
+        $(this).css('margin-bottom', '5%')}
+    , function() {
+        $('#' + $(this).attr('id') + 'show').stop(true, false).hide(200)
+        $(this).css('margin-bottom', '15%')
+});*/
+$('.hobbyhover').click(function() {
+    $('#' + $(this).attr('id') + 'show').toggle()
+    $(this).toggleClass('hobbymargin')
+})
+
+$('#all').mouseenter(function() {
+    $('li').show()
+})
+
+$('#web').mouseenter(function() {
+    $('#html').show();
+    $('#js').show();
+    $('#python').hide()
+    $('#jq').show();
+    $('#as').hide();
+    $('#exjs').show();
+    $('#sass').show();
+    $('#git').hide();
+    $('#sio').show();
+    $('#mdb').show();
+})
+
+$('#misc').mouseenter(function() {
+    $('#html').hide();
+    $('#js').hide();
+    $('#python').show()
+    $('#jq').hide();
+    $('#as').show();
+    $('#exjs').hide();
+    $('#sass').hide();
+    $('#git').show();
+    $('#sio').hide();
+    $('#mdb').hide();
+})
