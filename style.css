@@ -21,7 +21,7 @@ body {
     -moz-transition: background-color 0.5s;
     -ms-transition: background-color 0.5s;
     -o-transition: background-color 0.5s;
-    transition: background-color 0.50s;
+    transition: background-color 0.5s;
 }
 
 .header {
@@ -119,7 +119,7 @@ input:focus {
 }
 
 #x {
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: '', sans-serif;
 	font-size: .5em;
 	color: gray;
 	opacity: 0.5;
@@ -135,27 +135,36 @@ input:focus {
 .panel {
 	position: relative;
 	width: 100%;
-	height: 100%;
 	max-width: 100%;
+	display: inline-block;
+	padding-bottom: 5%
 }
 /*End generic panel class*/
 
 /*Generic card properties*/
 .card {
-	width: 80%;
+	width: 70%;
 	margin: 0 auto;
 	background-color: white;
 	box-shadow: 1.5px 1.5px 2px 2px #CECECE;
+	padding-bottom: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 .cardTitle {
 	width: 90%;
 	height: 10%;
 	margin: 0 auto;
-	text-align: center;
 	border-bottom: 1px solid #CECECE;
-	padding-top: 0.5em;
+	font-size: 2em;
+	padding-top: 1em;
 }
+
+.cardTitle h2 {
+	margin-bottom: 0px;
+}
+
 /*End generic cards*/
 
 /*About specifics*/
@@ -170,12 +179,58 @@ input:focus {
 	margin-top: 2%;
 	width: 20%;
 }
+
+.side {
+	width: 35%;
+	margin-top: 5%;
+	padding-left: 0%;
+	padding-right: 0%;
+	padding-bottom: 5%;
+}
+
+#aboutlikes {
+	float: left;
+	margin-left: 10%;
+}
+
+#aboutskills {
+	float: right; 
+	margin-right: 10%;
+	margin-bottom: 5%;
+}
 /*End about specifics*/
 
-/*Projects specifics*/
-.projects {
-	background-color: red;
+.lis {
+	text-align: center;
+	margin-top: 10%;
+	font-size: 1.5em;
+	list-style: none;
+	width: 90%;
+	padding-left: 0%
 }
+
+.lis li {
+	margin-bottom: 15%;
+	width: 100%;
+
+}
+
+.bar {
+	width: 50%;
+	border-radius: 5px;
+	height: 1em;
+	float: right;
+	background-color: #CECECE;	
+}
+
+.barfill {
+	border-radius: 5px;
+	height: 100%;
+	background-color: #67BEE7;
+}
+
+/*Projects specifics*/
+
 /*End projects specifics*/
 
 /*Responsiveness*/
@@ -185,7 +240,7 @@ input:focus {
 	.nav {visibility: hidden}
 	.panel {}
 	.splash {background: none;
-		background-color: yellow;
+		background-color: #67BEE7;
 		width: 100%; }
 	.splashtext {display: inline-block;	}
 }
