@@ -19,7 +19,7 @@
 		</div>
 
 		<div class='splash panel'>
-			<h2 id='inputName' class='splashtext int' >Hello <form>
+			<h2 id='inputName' class='splashtext int' ><form>
                         <div class='form'>
                             <input type='text' placeholder="Write your name" autocomplete="off" class='inputCommand' id='command' data-autosize-input='{ "space": 40 }' >
                         </div>
@@ -31,12 +31,12 @@
 
 		<div class='about panel'>
 			<div id='aboutme' class='card'>
-				<div class='cardTitle'><h2 class='int'>About Me</h2></div>
+				<div class='cardTitle'><h2 class='int'>Hello <span id='yourname'></span></h2></div>
 					<img id='mypic' src='HeadShot.png'>
 					<h2>I am pursuing a double Computer Science and Economics major at Cornell University.  My name is Andrei, and I am a computer scientist.</h2>
 			</div>
 			<div id='aboutlikes' class='card side left'>
-				<div class='cardTitle' style='font-size: 1.5em'><h2 class='int'>My Hobbies <span style='color: grey; font-size: 0.3em'>(Click on me!)</span></h2></div>
+				<div class='cardTitle' style='font-size: 1.5em'><h2 class='int'>My Hobbies <span style='color: grey; font-size: 0.3em'>(Click on me)</span></h2></div>
 					<ul id='likes' class='lis'>
 						<li class='hobbyhover' id='1'>Table Tennis</li>
 						<h2 class='hide' id='1show'>One of my favorite things to do with my friends is play ping-pong.</h2>
@@ -72,11 +72,37 @@
 						<li id='sio'>SocketIO <div class='bar'><div class='barfill' style='width: 45%'></div></div></li>
 						<li id='mdb'>MongoDB <div class='bar'><div class='barfill' style='width: 40%'></div></div></li>
 					</ul>
-					<span style='color: grey; font-size: 1em'>* used in this website</span>
+					<span style='color: grey; font-size: 1em'>only skills with a * were used in this website</span>
 			</div>
 			<div id='aboutBlog' class='card side left'>
 				<div class='cardTitle' style='font-size: 1.5em'><h2 class='int'>My Blog</h2></div>
 					<h2>You can check my blog out on <a target='__blank' href='https://medium.com/@Atalaba'>Medium</a>!</h2>
+					<h2 style='margin-top: 5%; color: gray; font-size: 0.8em'>My most recent blog post is: <span style='color: #67BEE7'>Introductions</span></h2>
+			</div>
+			<div id='aboutClasses' class='card side left'>
+				<div class='cardTitle' style='font-size: 1.5em'><h2 class='int'>My Classes</h2></div>
+					<h2>My current classes are:
+					<ul id='classes'>
+						<li>CS 1110 - Intro Computing Using Python</li>
+						<li>BIOG 1500 - Investigative Bio Lab</li>
+						<li>FREN 1210 - Elementary French</li>
+						<li>ENGL 1191 - FWS: British Literature</li>
+						<li>PE 1365 - Karate Basics</li>
+					</ul>
+					<h2 style='margin-top: 45%'>The classes I'm taking next term are:
+					<ul id='classes' style='color: gray'>
+						<li>CS 2110 - Obj-Oriented Prog & Data Struc</li>
+						<li>CS 2800 - Discrete Structures</li>
+						<li>ECON 1120 - Intro Macroeconomics</li>
+						<li>FREN 1220 - Elementary French</li>
+						<li>MATH 2210 - Linear Algebra
+						<li>PE 1366 - Karate</li>
+					</ul>
+					
+			</div>
+			<div id='aboutResume' class='card side left'>
+				<div class='cardTitle' style='font-size: 1.5em'><h2 class='int'>My Resume</h2></div>
+					<h2>You can see my resume as pdf by clicking <a target='__blank' href='CompSciResume.pdf'>here</a></h2>
 					
 			</div>
 			<div id='projects' class='projects card' style="clear: both; margin-top: 10%">

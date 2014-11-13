@@ -2,9 +2,9 @@ $(document).ready(function() {
     $(".inputSubmit").click(function(e) {
         e.preventDefault();
         document.getElementById('command').blur()
-        addClose()})
+        addClose(e)})
     $('#command').blur(function() {
-        addClose()})
+        document.getElementById('x').style.visibility = 'visible';})
                 .focus(function() {
         remClose()})
     $("#x").click(function() {
@@ -13,9 +13,13 @@ $(document).ready(function() {
         document.getElementById('command').focus();});
 });
 
-function addClose() {
-    document.getElementById('x').style.visibility = 'visible';
+function addClose(e) {
+    
     $('#command').attr('placeholder', '');
+    $('hmtl, body').animate({
+        scrollTop: $('.about').offset().top},
+        'slow', function() {});
+    document.getElementById('yourname').innerHTML = $(".inputCommand").val()
 }
 
 function remClose() {
@@ -44,7 +48,6 @@ $('.navli, .name').click(function(e) {
     $('hmtl, body').animate({
         scrollTop: $('.' + $(this).attr('id')).offset().top},
         'slow', function() {});
-    console.log("." + $(this).attr('id') + "  " + $('.' + $(this).attr('id')).offset().top)
 }); 
 
 /*$('.hobbyhover').hover(

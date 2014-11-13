@@ -230,6 +230,18 @@ a {
 .select:hover {
 	color: red;
 }
+
+#classes {
+	width: 100%;
+	float: left;
+	font-size: 0.8em;
+	text-align: left;
+}
+
+#classes li {
+	margin-bottom: 2%;
+	margin-left: 5%;
+}
 /*End about specifics*/
 
 .lis {
