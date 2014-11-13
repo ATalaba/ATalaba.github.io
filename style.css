@@ -16,6 +16,10 @@ body {
 }
 
 /*Header*/
+#logo {
+	height: 1em;
+}
+
 #head {
 	-webkit-transition: background-color 0.5s;
     -moz-transition: background-color 0.5s;
@@ -63,7 +67,7 @@ body {
 
 /*Picture panel*/
 .splash {
-	background: url('splash.jpg') fixed;
+	background: url('pics/splash.jpg') fixed;
 	background-size: cover;
 	text-align: center;
 	position: relative;
@@ -285,11 +289,14 @@ a {
 	width: 100%;
 	margin: 0 auto;
 	display: inline-block;
+	margin-top: 5%
 }
 
 .leftpic {
 	float: left;
 	width: 40%;
+	height: 50%;
+	border: 1px solid gray;
 }
 
 .righttext {
@@ -299,6 +306,23 @@ a {
 }
 
 /*End projects specifics*/
+
+.logos {
+	display: inline;
+	margin-left: 5%;
+	margin-right: 5%;
+	opacity: 0.5;
+	-webkit-transition: opacity 0.3s, color 0.3s;
+    -moz-transition: opacity 0.3s, color 0.3s;
+    -ms-transition: opacity 0.3s, color 0.3s;
+    -o-transition: opacity 0.3s, color 0.3s;
+    transition: opacity 0.3s, color 0.3s;	
+}
+
+.logos:hover {
+	opacity: 1;
+	color: red;
+}
 
 /*Responsiveness*/
 @media only screen and (max-width: 1000px) {

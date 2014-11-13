@@ -50,14 +50,6 @@ $('.navli, .name').click(function(e) {
         'slow', function() {});
 }); 
 
-/*$('.hobbyhover').hover(
-    function() {
-        $('#' + $(this).attr('id') + 'show').stop(true, false).show(200)
-        $(this).css('margin-bottom', '5%')}
-    , function() {
-        $('#' + $(this).attr('id') + 'show').stop(true, false).hide(200)
-        $(this).css('margin-bottom', '15%')
-});*/
 $('.hobbyhover').click(function() {
     $('#' + $(this).attr('id') + 'show').toggle()
     $(this).toggleClass('hobbymargin')
