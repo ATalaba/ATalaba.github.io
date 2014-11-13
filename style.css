@@ -307,6 +307,21 @@ a {
 
 /*End projects specifics*/
 
+#classshow {
+	opacity: 0.5;
+	margin-left: 5%;
+	-webkit-transition: opacity 0.3s, color 0.3s;
+    -moz-transition: opacity 0.3s, color 0.3s;
+    -ms-transition: opacity 0.3s, color 0.3s;
+    -o-transition: opacity 0.3s, color 0.3s;
+    transition: opacity 0.3s, color 0.3s;	
+}
+
+#classshow:hover {
+	opacity: 1;
+	color: red;
+}
+
 .logos {
 	display: inline;
 	margin-left: 5%;

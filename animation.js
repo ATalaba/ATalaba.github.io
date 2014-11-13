@@ -84,3 +84,6 @@ $('#misc').mouseenter(function() {
     $('#sio').hide();
     $('#mdb').hide();
 })
+$('#classshow').click(function() {
+    $('.clashow').toggleClass('hide')
+})
