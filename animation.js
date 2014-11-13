@@ -56,34 +56,36 @@ $('.hobbyhover').click(function() {
 })
 
 $('#all').mouseenter(function() {
-    $('li').show()
+    $('li').show(300)
 })
 
 $('#web').mouseenter(function() {
-    $('#html').show();
-    $('#js').show();
-    $('#python').hide()
-    $('#jq').show();
-    $('#as').hide();
-    $('#exjs').show();
-    $('#sass').show();
-    $('#git').hide();
-    $('#sio').show();
-    $('#mdb').show();
+    $('#html').show(300);
+    $('#js').show(300);
+    $('#python').hide(300)
+    $('#jq').show(300);
+    $('#as').hide(300);
+    $('#exjs').show(300);
+    $('#sass').show(300);
+    $('#git').hide(300);
+    $('#sio').show(300);
+    $('#mdb').show(300);
 })
 
 $('#misc').mouseenter(function() {
-    $('#html').hide();
-    $('#js').hide();
-    $('#python').show()
-    $('#jq').hide();
-    $('#as').show();
-    $('#exjs').hide();
-    $('#sass').hide();
-    $('#git').show();
-    $('#sio').hide();
-    $('#mdb').hide();
+    $('#html').hide(300);
+    $('#js').hide(300);
+    $('#python').show(300)
+    $('#jq').hide(300);
+    $('#as').show(300);
+    $('#exjs').hide(300);
+    $('#sass').hide(300);
+    $('#git').show(300);
+    $('#sio').hide(300);
+    $('#mdb').hide(300);
 })
 $('#classshow').click(function() {
     $('.clashow').toggleClass('hide')
+    $(this).toggleClass('fa-plus-square')
+    $(this).toggleClass('fa-minus-square')
 })

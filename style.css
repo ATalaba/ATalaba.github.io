@@ -262,6 +262,14 @@ a {
 	width: 100%;
 }
 
+.hobbyhover {
+	-webkit-transition: color 0.1s;
+    -moz-transition: color 0.1s;
+    -ms-transition: color 0.1s;
+    -o-transition: color 0.1s;
+    transition: color 0.1s;
+}
+
 .hobbyhover:hover {
 	color: red;
 }
