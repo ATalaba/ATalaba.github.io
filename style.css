@@ -208,6 +208,10 @@ input:focus {
 	font-style: italic;
 }
 
+.hidec {
+	display: none;
+}
+
 #likes {
 	margin: 0 auto;
 	margin-top: 7%;

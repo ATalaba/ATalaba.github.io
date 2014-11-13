@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('.about').hide()
     $(".inputSubmit").click(function(e) {
         e.preventDefault();
         document.getElementById('command').blur()
@@ -14,7 +15,7 @@ $(document).ready(function() {
 });
 
 function addClose(e) {
-    
+    $('.about').show()
     $('#command').attr('placeholder', '');
     $('hmtl, body').animate({
         scrollTop: $('.about').offset().top},
@@ -85,7 +86,7 @@ $('#misc').mouseenter(function() {
     $('#mdb').hide(300);
 })
 $('#classshow').click(function() {
-    $('.clashow').toggleClass('hide')
+    $('.clashow').toggleClass('hidec')
     $(this).toggleClass('fa-plus-square')
     $(this).toggleClass('fa-minus-square')
 })
