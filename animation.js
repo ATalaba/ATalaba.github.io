@@ -1,7 +1,9 @@
 $(document).ready(function() {
     $('.about').hide()
-    $(".inputSubmit").click(function(e) {
-        e.preventDefault();
+    $(".inputSubmit").on('click', function(e) {
+        alert("WHY")
+        if (e.preventDefault) {alert('FUCK IE'); e.preventDefault();}
+        else {alert('FUCK IE'); e.returnValue = False}
         document.getElementById('command').blur()
         addClose(e)})
     $('#command').blur(function() {
@@ -15,7 +17,8 @@ $(document).ready(function() {
 });
 
 function addClose(e) {
-    $('.about').show()
+    $('.about').show(); // shows for all browsers but IE
+    alert($('.about').css('display') + ' is display and visibility is ' + $('.about').css('display'))
     $('#command').attr('placeholder', '');
     $('hmtl, body').animate({
         scrollTop: $('.about').offset().top},
@@ -57,7 +60,7 @@ $('.hobbyhover').click(function() {
 })
 
 $('#all').mouseenter(function() {
-    $('li').show(300)
+    $('#skills li').show(300)
 })
 
 $('#web').mouseenter(function() {

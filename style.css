@@ -50,6 +50,7 @@ body {
 
 .name:hover {
 	color: red;
+	cursor: pointer;
 }
 
 .nav {
@@ -65,6 +66,7 @@ body {
 
 .navli:hover {
 	color: red;
+	cursor: pointer;
 }
 
 /*End Header*/
@@ -124,6 +126,7 @@ input:focus {
 /*Cool little x*/
 #x:hover {
 	opacity: 1;
+	cursor: pointer;
 }
 
 #x {
@@ -241,6 +244,7 @@ a {
 
 .select:hover {
 	color: red;
+	cursor: pointer;
 }
 
 #classes {
@@ -280,6 +284,7 @@ a {
 
 .hobbyhover:hover {
 	color: red;
+	cursor: pointer;
 }
 
 .hobbymargin {
@@ -336,6 +341,7 @@ a {
 #classshow:hover {
 	opacity: 1;
 	color: red;
+	cursor: pointer;
 }
 
 .logos {
@@ -353,6 +359,7 @@ a {
 .logos:hover {
 	opacity: 1;
 	color: red;
+	cursor: pointer;
 }
 
 /*Responsiveness*/
@@ -364,4 +371,7 @@ a {
 		background-color: #67BEE7;
 		width: 100%; }
 	.splashtext {display: inline-block;	}
+	.side {width: 70%;
+		padding-right: 5%;
+		padding-left: 5%;}
 }
