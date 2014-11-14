@@ -169,6 +169,7 @@ input:focus {
 	height: 10%;
 	margin: 0 auto;
 	border-bottom: 1px solid #CECECE;
+	display: inline-block;
 	font-size: 2em;
 	padding-top: 1em;
 }
@@ -374,4 +375,9 @@ a {
 	.side {width: 70%;
 		padding-right: 5%;
 		padding-left: 5%;}
+	.leftpic {display: none;}
+	.righttext {margin: 0 auto;
+		width: 100%;
+		margin-bottom: 5%;
+		text-align: center;}
 }
