@@ -30,9 +30,9 @@ body {
 
 .header {
 	position: fixed;
-	height: 3em;
+	height: 2.2em;
 	width: 100%;
-	font-size: 2em;
+	font-size: 1.8em;
 	color: white;
 	text-shadow: 1px 2px 3px black;
 	z-index: 100;
@@ -40,7 +40,7 @@ body {
 
 .name {
 	display: inline-block;
-	margin-left: 5%;
+	margin-left: 8%;
 	float: left;
 }
 
