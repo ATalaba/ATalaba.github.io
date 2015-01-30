@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    $('.about').hide()
     $(".inputSubmit").on('click', function(e) {
         if (e.preventDefault) {e.preventDefault();}
         else {e.returnValue = False}
@@ -16,7 +15,6 @@ $(document).ready(function() {
 });
 
 function addClose(e) {
-    $('.about').show(); // shows for all browsers but IE
     $('#command').attr('placeholder', '');
     $('hmtl, body').animate({
         scrollTop: $('.about').offset().top},
