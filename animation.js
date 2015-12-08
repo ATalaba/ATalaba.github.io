@@ -71,6 +71,7 @@ $('#web').mouseenter(function() {
     $('#git').hide(300);
     $('#cs').hide(300);
     $('#mdb').show(300);
+    $('#oc').hide(300);
 })
 
 $('#misc').mouseenter(function() {
@@ -85,6 +86,7 @@ $('#misc').mouseenter(function() {
     $('#git').show(300);
     $('#cs').show(300);
     $('#mdb').hide(300);
+    $('#oc').show(300);
 })
 $('#classshow').click(function() {
     $('.clashow').toggleClass('hidec')
