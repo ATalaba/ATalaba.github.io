@@ -19,20 +19,9 @@
 			</ul>
 		</div>
 
-		<div class='splash panel'>
-			<h2 id='inputName' class='splashtext int' ><form>
-                        <div class='form'>
-                            <input type='text' placeholder="Write your name" autocomplete="off" class='inputCommand' id='command' data-autosize-input='{ "space": 40 }' >
-                        </div>
-
-                        <button type='submit' class='inputSubmit'>Add</button></form>
-                        <div id='x'>x</div>
-			</h2>
-		</div>
-
 		<div class='about panel'>
 			<div id='aboutme' class='card'>
-				<div class='cardTitle'><h2 class='int'>Hello <span id='yourname' style='font-family: "Rancho", cursive; font-size: 1.2em'></span></h2></div>
+				<div class='cardTitle'><h2 class='int'>Hello World!<span id='yourname' style='font-family: "Rancho", cursive; font-size: 1.2em'></span></h2></div>
 					<img id='mypic' src='pics/HeadShot.png'>
 					<h2>My name is Andrei Talaba, and I love creating things. I started programming in April 2014, and have been trying to create fun or useful things ever since. I'm a computer science major at Cornell University, hoping to vector both in Software Engineering and Security & Trustworthy Systems.</h2>
 			</div>
@@ -65,10 +54,47 @@
 					</ul>
 					<span style='color: grey; font-size: 1em'>* used to create this website</span>
 			</div>
-			<div id='aboutBlog' class='card side left'>
+			<!-- <div id='aboutBlog' class='card side left'>
 				<div class='cardTitle' style='font-size: 1.5em'><h2 class='int'>My Blog</h2></div>
 					<h2>You can check out my blog on <a target='__blank' href='https://medium.com/@Atalaba'>Medium</a>!</h2>
 					<h2 style='margin-top: 5%; color: gray; font-size: 0.8em'>My most recent blog post is: <a href='https://medium.com/@Atalaba/introductions-9fee15026301' target='__blank'>Introductions</a></h2>
+			</div> -->
+			<div id='aboutClasses' class='card side left'>
+				<div class='cardTitle' style='font-size: 1.5em'><h2 class='int'>My Classes</h2></div>
+					<h2>Current classes:</h2>
+					<ul id='classes'>
+						<li>CS 3410 - Computer System Organization & Programming</li>
+						<li>CS 4820 - Introduction to Analysis of Algorithms</li>
+						<li>CS 4120 - Introduction to Compilesr</li>
+						<li>CS 4121 - Practicum in Compilers</li>
+						<li>BIOMG 1290 - Personal Genetics and Medicine</li>
+						<li>PE 1430 - Introduction to Yoga</li>
+					</ul>
+					<h2 style='margin-top: 35%'>Previous classes:<i id='classshow' class='fa fa-plus-square'></i></h2>
+					<h4 class='hidec clashow'>Fall 2015</h4>
+					<ul id='classes' style='color: gray'>
+						<li class='hidec clashow'>CS 3110 - Data Structures & Functional Programming</li>
+						<li class='hidec clashow'>FREN 2090 - French Intermediate Composition & Conversation</li>
+						<li class='hidec clashow'>ENGL 2800 - Introduction to Creative Writing</li>
+						<li class='hidec clashow'>PE 1366 - Karate</li>
+					</ul>
+					<h4 class='hidec clashow'>Spring 2015</h4>
+					<ul id='classes' style='color: gray'>
+						<li class='hidec clashow'>CS 2110 - Object-Oriented Programming & Data Structures</li>
+						<li class='hidec clashow'>CS 2800 - Discrete Structures</li>
+						<li class='hidec clashow'>FREN 1220 - Elementary French</li>
+						<li class='hidec clashow'>MATH 2210 - Linear Algebra</li>
+						<li class='hidec clashow'>PE 1366 - Karate</li>
+						<li class='hidec clashow'>PE 1171 - Intermediate Swing Dance</li>
+					</ul>
+					<h4 class='hidec clashow'>Fall 2014</h4>
+					<ul id='classes' style='color: gray'>
+						<li class='hidec clashow'>CS 1110 - Introduction to Computing Using Python</li>
+						<li class='hidec clashow'>BIOG 1500 - Investigative Bio Labarotary</li>
+						<li class='hidec clashow'>FREN 1210 - Elementary French</li>
+						<li class='hidec clashow'>ENGL 1191 - FWS: British Literature</li>
+						<li class='hidec clashow'>PE 1365 - Karate Basics</li>
+					</ul>
 			</div>
 			<div id='projects' class='projects card' style="clear: both; margin-top: 10%">
 				<div class='cardTitle'><h2 class='int'>My Experience/Projects</h2></div>
@@ -124,38 +150,8 @@
 						<span style='font-size:0.5em'>A k-means custering algorithm I made for my CS 1110 class in Python. The GUI was given to us.</span></h2>
 					</div>
 			</div>
-			<div id='aboutClasses' class='card side left'>
-				<div class='cardTitle' style='font-size: 1.5em'><h2 class='int'>My Classes</h2></div>
-					<h2>Current classes:</h2>
-					<ul id='classes'>
-						<li>CS 3110 - Data Struc & Functional Prog</li>
-						<li>FREN 2090 - French Intermediate Comp & Conv</li>
-						<li>BIOMS 3150 - Basic Immunology</li>
-						<li>ENGL 2800 - Intro to Creative Writing</li>
-						<li>PE 1366 - Karate</li>
-						<li>PE 1171 - Intermediate Swing Dance</li>
-					</ul>
-					<h2 style='margin-top: 35%'>Previous classes:<i id='classshow' class='fa fa-plus-square'></i></h2>
-					<h4 class='hidec clashow'>Fall 2014</h4>
-					<ul id='classes' style='color: gray'>
-						<li class='hidec clashow'>CS 1110 - Intro Computing Using Python</li>
-						<li class='hidec clashow'>BIOG 1500 - Investigative Bio Lab</li>
-						<li class='hidec clashow'>FREN 1210 - Elementary French</li>
-						<li class='hidec clashow'>ENGL 1191 - FWS: British Literature</li>
-						<li class='hidec clashow'>PE 1365 - Karate Basics</li>
-					</ul>
-					<h4 class='hidec clashow'>Spring 2015</h4>
-					<ul id='classes' style='color: gray'>
-						<li class='hidec clashow'>CS 2110 - Obj-Oriented Prog & Data Struc</li>
-						<li class='hidec clashow'>CS 2800 - Discrete Structures</li>
-						<li class='hidec clashow'>FREN 1220 - Elementary French</li>
-						<li class='hidec clashow'>MATH 2210 - Linear Algebra</li>
-						<li class='hidec clashow'>PE 1366 - Karate</li>
-						<li class='hidec clashow'>PE 1171 - Intermediate Swing Dance</li>
-					</ul>
-			</div>
 			
-			<div id='aboutlikes' class='card side right'>
+			<!-- <div id='aboutlikes' class='card side right'>
 				<div class='cardTitle' style='font-size: 1.5em; margin-bottom: 2%'><h2 class='int'>My Hobbies</h2></div><br>
 					<span style='color: grey; font-size: 0.8em'>(Click on any hobby)</span>	
 					<ul id='likes' class='lis'>
@@ -170,7 +166,8 @@
 						<li class='hobbyhover' id='5'>Music</li>
 						<h2 class='hide' id='5show'>I have taken years of guitar lessons when I was younger. Now, I occasionally pick up the guitar to learn a new song or sing with friends. I am slowly teaching myself piano.</h2>
 					</ul>
-			</div>
+			</div> -->
+
 			<div id='contactme' class='contact card' style='clear: both'>
 				<div class='cardTitle'><h2 class='int'>Contact Me</h2></div>
 					<h2>You can contact me through any of the options below.</h2>
@@ -196,12 +193,6 @@
 		<script src='jquery-1.11.1.min.js'></script>
 		<script src='jquery.autosize.input.min.js'></script>
 		<script src='animation.js'></script>
-		<script>
-        function setFocus() {
-            document.getElementById('command').focus();
-        };
-        setFocus();
-        </script>
 	</body>
 
 </html>
