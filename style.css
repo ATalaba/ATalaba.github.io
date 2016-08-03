@@ -115,7 +115,7 @@ input {
   	overflow: auto;
   	width: 5em;
   	max-width: 800px;
-  	transition: width 0.1s;
+  	transition: width 0.2s;
 }
 
 input:focus {
@@ -218,6 +218,11 @@ input:focus {
 	font-style: italic;
 }
 
+.smallText {
+	font-size: 0.7em;
+	font-style: italic;
+}
+
 .hidec {
 	display: none;
 }
@@ -277,15 +282,15 @@ a {
 	width: 100%;
 }
 
-.hobbyhover {
-	-webkit-transition: color 0.1s;
-    -moz-transition: color 0.1s;
-    -ms-transition: color 0.1s;
-    -o-transition: color 0.1s;
-    transition: color 0.1s;
+.hobbyhover, .langhover {
+	-webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s;
 }
 
-.hobbyhover:hover {
+.hobbyhover:hover, .langhover:hover {
 	color: red;
 	cursor: pointer;
 }
@@ -327,6 +332,7 @@ a {
 	float: left;
 	margin-left: 5%;
 	width: 50%;
+	margin-top: 0;
 }
 
 /*End projects specifics*/

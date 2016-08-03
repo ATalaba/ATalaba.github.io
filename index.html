@@ -40,8 +40,8 @@
 					</ul>
 					<ul id='skills' class='lis'>
 						<li id='html'>HTML/CSS*<div class='bar'><div class='barfill' style='width: 85%'></div></div></li>
-						<li id='python'>Python <div class='bar'><div class='barfill' style='width: 75%'></div></div></li>
-						<li id='js'>JavaScript* <div class='bar'><div class='barfill' style='width: 65%'></div></div></li>
+						<li id='python'>Python <div class='bar'><div class='barfill' style='width: 85%'></div></div></li>
+						<li id='js'>JavaScript (ES5)* <div class='bar'><div class='barfill' style='width: 65%'></div></div></li>
 						<li id='jq'>jQuery* <div class='bar'><div class='barfill' style='width: 65%'></div></div></li>
 						<li id='oc'>OCaml <div class='bar'><div class='barfill' style='width:65%'></div></div></li>
 						<li id='njs'>nodeJS <div class='bar'><div class='barfill' style='width: 60%'></div></div></li>
@@ -63,14 +63,25 @@
 				<div class='cardTitle' style='font-size: 1.5em'><h2 class='int'>My Classes</h2></div>
 					<h2>Current classes:</h2>
 					<ul id='classes'>
-						<li>CS 3410 - Computer System Organization & Programming</li>
-						<li>CS 4820 - Introduction to Analysis of Algorithms</li>
-						<li>CS 4120 - Introduction to Compilesr</li>
-						<li>CS 4121 - Practicum in Compilers</li>
-						<li>BIOMG 1290 - Personal Genetics and Medicine</li>
-						<li>PE 1430 - Introduction to Yoga</li>
+						<li>CS 4110 - Programming Languages</li>
+						<li>CS 4700 - Foundations of Artificial Intelligence</li>
+						<li>CS 4701 - Practicum in Artificial Intelligence</li>
+						<li>CS 4410 - Operating Systems</li>
+						<li>CS 4411 - Practicum in Operating Systems</li>
+						<li>CS 4420 - Computer Architecture</li>
+						<li>PSYCH 3420 - Human Perception</li>	
+						<li>ASIAN 2211 - Introduction to Japan</li>
+						<li>PE 1580 - Introduction to Small Boat Sailing</li>
 					</ul>
 					<h2 style='margin-top: 35%'>Previous classes:<i id='classshow' class='fa fa-plus-square'></i></h2>
+					<h4 class='hidec clashow'>Spring 2016</h4>
+					<ul id='classes' style='color: gray'>
+						<li class='hidec clashow'>CS 3410 - Computer System Organization & Programming</li>
+						<li class='hidec clashow'>CS 4120 - Introduction to Compilers</li>
+						<li class='hidec clashow'>CS 4121 - Practicum in Compilers</li>
+						<li class='hidec clashow'>BIOMG 1290 - Personal Genetics and Medicine</li>
+						<li class='hidec clashow'>PE 1430 - Introduction to Yoga</li>
+					</ul>
 					<h4 class='hidec clashow'>Fall 2015</h4>
 					<ul id='classes' style='color: gray'>
 						<li class='hidec clashow'>CS 3110 - Data Structures & Functional Programming</li>
@@ -98,16 +109,37 @@
 			</div>
 			<div id='projects' class='projects card' style="clear: both; margin-top: 10%">
 				<div class='cardTitle'><h2 class='int'>My Experience/Projects</h2></div>
-					<h2>Almost all of my projects and attempts at playing with new languages can be found on GitHub.</h2>
+					<h2>Many of my projects and attempts at playing with new languages can be found on GitHub.</h2>
+					<div class='proj'>
+						<div class='leftpic'>
+							<h2>No picture available</h2>
+							<p>I cannot give any identifying information about the project</p>
+						</div>
+						<h2 class='righttext'>American Express<br>
+						<span style='font-size:0.5em'>I was responsible from the full development of an internal, employee-engagement CMS with in-line editing capabilities. I created a design from scratch, implemented it in Django and MySQL, and set up the hosting environment.</span></h2>
+					</div>
+					<div class='proj'>
+						<img class='leftpic' src='pics/Xic.PNG'>
+						<h2 class='righttext'>Xic<br>
+						<span style='font-size:0.5em'>I Worked in a four-person team in my Introduction to Compilers course to create a fully functional compiler, which compiles a statically typed, object-oriented, C-family language down to x86-64 assembly. The language, called <a target='__blank' href='http://www.cs.cornell.edu/courses/cs4120/2016sp/project/oolang.pdf'>oXi</a>, was made for our course. I contributed to each part of the compiler, including parsing, translation to an intermediate representation, optimizations, and translating to assembly. Our compiler for Xi (a version of oXi without its class system) was named most correct in the class.</span></h2>
+					</div>
 					<div class='proj'>
 						<img class='leftpic' src='pics/TTT.PNG'>
 						<h2 class='righttext'>Ultimate Tic-Tac-TOcaml<br>
-						<span style='font-size:0.5em'>I worked together with a group to implement a version of Ultimate Tic-Tac-Toe in OCaml that supports networked multiplayer. I worked on implementing the client and server modules, and making sure each module communicated with the one it was supposed to over a TCP connection.</span></h2>
+						<span style='font-size:0.5em'>I worked together with a group to implement a version of Ultimate Tic-Tac-Toe in OCaml that supports networked multiplayer. I worked on implementing the client and server modules, as well as making sure each module communicated with the one it was supposed to over a TCP connection.</span></h2>
 					</div>
 					<div class='proj'>
 						<img class='leftpic' src='pics/Athenir.PNG'>
 						<h2 class='righttext'><a href='http://athenir.com' target='__blank'>Athenir</a><br>
-						<span style='font-size:0.5em'>I was hired to extend the website's functionality. I had to migrate the existing search function to Flask, and add a MongoDB backend to allow for user and school accounts.</span></h2>
+						<span style='font-size:0.5em'>Migrated the existing search functionality of Athenir, a search engine for students that focuses on academic queries, from PHP to Flask. Added a back-end using MongoDB to create user and school accounts, as well as required functionality for both account types including allowing schools to filter the results that users see and allowing users share and compartmentalize links into projects and notebooks. (Note: Athenir has since shut down and taken their website offline.</span></h2>
+					</div>
+					<div class='proj'>
+						<div class='leftpic'>
+							<h2>No picture available</h2>
+							<p>I cannot take a picture of source code.</p>
+						</div>
+						<h2 class='righttext'><a href='http://athenir.com' target='__blank'>Cornell-Intel Cup</a><br>
+						<span style='font-size:0.5em'>I was hired to extend the website's functionality. I had to migrate the existing search engine functionality to Flask, and add a backend using MongoDB to allow for user and school accounts. I also had to add the required functionality for both account types, including having schools be able to filter the results the users saw, and having users be able to save links into projects that they can then share with others.</span></h2>
 					</div>
 					<div class='proj'>
 						<img class='leftpic' src='pics/PLab.PNG'>
@@ -126,7 +158,7 @@
 					</div>
 					<div class='proj'>
 						<img class='leftpic' src='pics/RandomPoemPic.PNG'>
-						<h2 class='righttext'><a href='http://randompoems.me' target='__blank'>randompoems.me</a><br>
+						<h2 class='righttext'><a href='https://github.com/ATalaba/RandomPoetry' target='__blank'>randompoems.me</a><br>
 						<span style='font-size:0.5em'>The first website I ever launched by myself. Static, written only in HTML/CSS/jQuery, and only meant to display my roommate's random poetry.</span></h2>
 					</div>					
 					<div class='proj'>
@@ -150,23 +182,37 @@
 						<span style='font-size:0.5em'>A k-means custering algorithm I made for my CS 1110 class in Python. The GUI was given to us.</span></h2>
 					</div>
 			</div>
+
+			<div id='aboutlikes' class='card side left'>
+				<div class='cardTitle' style='font-size: 1.5em; margin-bottom: 2%'><h2 class='int'>Languages</h2></div><br>
+					<ul id='likes' class='lis'>
+						<li class='langhover' id='1'>English</li>
+						<p class='hide' id='1langshow'>Native (Speak/Read/Write)</p>
+						<li class='langhover' id='2'>Romanian</li>
+						<p class='hide' id='2langshow'>Native (Speak/Read/Write)</p>
+						<li class='langhover' id='3'>French</li>
+						<p class='hide' id='3langshow'>Conversational level (Speak/Read/Write) after three semesters of French courses</p>
+						<li class='langhover' id='4'>Spanish</li>
+						<p class='hide' id='4langshow'>Basic conversational level (Speak/Read)</p>
+					</ul>
+			</div>
 			
-			<!-- <div id='aboutlikes' class='card side right'>
+			<div id='aboutlikes' class='card side right'>
 				<div class='cardTitle' style='font-size: 1.5em; margin-bottom: 2%'><h2 class='int'>My Hobbies</h2></div><br>
 					<span style='color: grey; font-size: 0.8em'>(Click on any hobby)</span>	
 					<ul id='likes' class='lis'>
 						<li class='hobbyhover' id='1'>Fencing</li>
-						<h2 class='hide' id='1show'>I've been fencing for two years. While I'm not rated yet, I am on the Cornell Men's Club Fencing team and hope to get at least a C by the time I graduate.</h2>
+						<h2 class='hide' id='1hobbyshow'>I've been fencing for two years. While I'm not rated yet, I am on the Cornell Men's Club Fencing team and hope to get at least a C by the time I graduate.</h2>
 						<li class='hobbyhover' id='2'>Swing</li>
-						<h2 class='hide' id='2show'>I started swing dancing in a high school ballroom course. I know east coast and west coast.</h2>
+						<h2 class='hide' id='2hobbyshow'>I know east coast and west coast.</h2>
 						<li class='hobbyhover' id='3'>Karate</li>
-						<h2 class='hide' id='3show'>I started by taking an Introduction to Karate class, and I am now a member of both the regular Karate class, and the Cornell Karate club. I am an 7th Kyu student of Shito Ryu</h2>
+						<h2 class='hide' id='3hobbyshow'>I started by taking an Introduction to Karate class, and I am now a member of both the regular Karate class, and the Cornell Karate club. I am an 6th Kyu student of Shito Ryu</h2>
 						<li class='hobbyhover' id='4'>Writing</li>
-						<h2 class='hide' id='4show'>I have always loved writing stories and poetry for classes, and have taken a creative writing course at Cornell. I started a blog that I hope to update every now and then.</h2>
+						<h2 class='hide' id='4hobbyshow'>I have always loved writing stories and poetry for classes, and have taken a creative writing course at Cornell. I started a blog that I hope to update every now and then.</h2>
 						<li class='hobbyhover' id='5'>Music</li>
-						<h2 class='hide' id='5show'>I have taken years of guitar lessons when I was younger. Now, I occasionally pick up the guitar to learn a new song or sing with friends. I am slowly teaching myself piano.</h2>
+						<h2 class='hide' id='5hobbyshow'>I have taken years of guitar lessons when I was younger. Now, I occasionally pick up the guitar to learn a new song or sing with friends. I am slowly teaching myself piano.</h2>
 					</ul>
-			</div> -->
+			</div>
 
 			<div id='contactme' class='contact card' style='clear: both'>
 				<div class='cardTitle'><h2 class='int'>Contact Me</h2></div>
