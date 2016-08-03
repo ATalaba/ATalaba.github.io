@@ -5,7 +5,12 @@ $('.navli, .name').click(function(e) {
 }); 
 
 $('.hobbyhover').click(function() {
-    $('#' + $(this).attr('id') + 'show').toggle()
+    $('#' + $(this).attr('id') + 'hobbyshow').toggle()
+    $(this).toggleClass('hobbymargin')
+})
+
+$('.langhover').click(function() {
+    $('#' + $(this).attr('id') + 'langshow').toggle()
     $(this).toggleClass('hobbymargin')
 })
 
