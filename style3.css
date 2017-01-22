@@ -75,3 +75,14 @@ a {
 	width: 80%;
 	margin: 0 auto;	
 }
+
+
+@media screen and (max-width: 800px) {
+    #facePic {
+    	flex: 0;
+    	display: none;
+    }
+    #header ul {
+    	flex-direction: column;
+    }
+}
