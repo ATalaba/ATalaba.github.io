@@ -90,7 +90,7 @@ a {
     	flex: 0;
     	display: none;
     }
-    #header ul {
-    	flex-direction: column;
+    #header ul li {
+    	/*font-size: 1px;*/
     }
 }
