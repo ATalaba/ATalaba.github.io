@@ -1,0 +1,77 @@
+html {
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	font-family: 'Slabo 27px', serif;
+	font-size: 17px;
+	color: #555555;
+	line-height: 1.4;
+}
+
+a {
+	color: #555555;
+	text-decoration: none;
+}
+
+#banner {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 2%;
+	display: flex;
+}
+
+#facePic {
+	flex: 1;
+	margin-right: 2%;
+}
+
+#facePic img {
+	display: inline-block;
+	width: 100%;
+	border-radius: 50%;
+}
+
+#header {
+	flex: 8;
+	margin-bottom: 5%;
+}
+
+#header ul {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+}
+
+#header ul li {
+	flex: 1;
+	text-align: center;
+}
+
+#header ul li a {
+	font-size: 1.3em;
+	transition: all .3s;
+}
+
+#header ul li a:hover {
+	cursor: pointer;
+	font-size: 1.4em;
+	color: red;
+}
+
+#name {
+	font-size: 3em;
+	margin-bottom: 1%;
+	margin-top: 0;
+}
+
+.red {
+	border: 1px solid red;
+}
+
+.page {
+	width: 80%;
+	margin: 0 auto;	
+}
