@@ -90,7 +90,19 @@ a {
     	flex: 0;
     	display: none;
     }
+    #name {
+    	font-size: 2em;
+    }
     #header ul li {
-    	/*font-size: 1px;*/
+    	/*font-size: 14px;*/
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #name {
+    	font-size: 2em;
+    }
+    #header ul li {
+    	font-size: 14px;
     }
 }
